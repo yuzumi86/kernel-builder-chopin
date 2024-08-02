@@ -228,6 +228,10 @@ jobs:
       #     if [ -f kernel/cgroup/cgroup.c ]; then
       #     ./runcpatch.sh kernel/cgroup/cgroup.c               
       #     fi
+
+      
+
+      
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
         env:
@@ -236,6 +240,9 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
+
+
+     
 
       - name: "🎶 Build kernel"
         working-directory: ${{ env.KERNEL_NAME }}
@@ -324,3 +331,13 @@ jobs:
           tag_name: v${{ env.builddate }}.${{ github.run_number }}
           files: "${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}.zip"
           generate_release_notes: true
+
+      - name: Test Upload to Telegram
+        run: |
+              img=${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}.zip
+              curl -F document=@$img "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendDocument" \
+              -F chat_id="${{ secrets.TG_CHAT_ID }}" \
+              -F parse_mode=html \
+              -F disable_web_page_preview=true
+      
+      
