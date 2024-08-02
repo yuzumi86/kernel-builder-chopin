@@ -6,8 +6,11 @@
       "branch": "OSS-RUI2",
       "device": "even",
       "defconfig": "even_ksu_defconfig"
+      "kbuilduser": "ISMASRULL",
+      "kbuildhost": "Kitsune Kawaii",
+      "kbuildtime": "Asia/Jakarta"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/LeCmnGend/clang",
