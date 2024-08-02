@@ -33,7 +33,7 @@ jobs:
     needs:
       - Set-repos
     strategy:
-      max-parallel: 4
+      max-parallel: 8
       fail-fast: false
       matrix:
         repos: ${{ fromJSON(needs.Set-repos.outputs.repos) }}
@@ -46,7 +46,9 @@ jobs:
       KERNEL_REPO: ${{ matrix.repos.kernelSource.repo }}
       KERNEL_BRANCH: ${{ matrix.repos.kernelSource.branch }}
       KERNEL_DEVICE: ${{ matrix.repos.kernelSource.device }}
-
+      KERNEL_USER: ${{ matrix.repos.kernelSource.kbuilduser }}
+      KERNEL_HOST: ${{ matrix.repos.kernelSource.kbuildhost }}
+      KERNEL_TIME_REGION: ${{ matrix.repos.kernelSource.kbuildtime }}
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
@@ -240,8 +242,9 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
-
-
+          export TZ=${{ env.KERNEL_TIME_REGION }}
+          export KBUILD_BUILD_USER=${{ env.KERNEL_USER }}
+          export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
      
 
       - name: "🎶 Build kernel"
@@ -251,6 +254,9 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${{ env.args }}
+          export TZ=${{ env.KERNEL_TIME_REGION }}
+          export KBUILD_BUILD_USER=${{ env.KERNEL_USER }}
+          export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
 
       - name: "💛 Upload Image"
         uses: actions/upload-artifact@v3
