@@ -8,7 +8,7 @@
       "defconfig": "even_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "Kitsune Kawaii",
-      "kbuildtime": "Asia/Jakarta",
+      "kbuildtime": "Asia/Jakarta"
       
     },
     "withKernelSU": false,
