@@ -1,17 +1,17 @@
 [
   {
     "kernelSource": {
-      "name": "bxsj-KernelSU-Proton-release",
-      "repo": "https://github.com/AOSP-13-Mediatek/kernel_xiaomi_chopin",
-      "branch": "r",
-      "device": "chopin",
-      "defconfig": "chopin_user_defconfig"
+      "name": "Liquwid-kernel-RELEASE-Proton-clang",
+      "repo": "https://github.com/liquidprjkt/liquid_kernel_realme_even",
+      "branch": "OSS-RUI2",
+      "device": "even",
+      "defconfig": "even_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
+        "repo": "https://gitlab.com/LeCmnGend/clang",
+        "branch": "clang-17",
         "name": "proton-clang",
         "binPath": ["bin"]
       }
@@ -39,7 +39,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/osm0sis/AnyKernel3",
+      "repo": "https://github.com/cumaRull/AnyKernel3",
       "branch": "master"
     }
   }
