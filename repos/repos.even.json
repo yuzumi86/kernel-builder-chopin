@@ -14,8 +14,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/LeCmnGend/clang",
-        "branch": "clang-17",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang",
+        "branch": "18",
         "name": "proton-clang",
         "binPath": ["bin"]
       }
