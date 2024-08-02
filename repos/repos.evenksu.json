@@ -5,12 +5,12 @@
       "repo": "https://github.com/liquidprjkt/liquid_kernel_realme_even",
       "branch": "OSS-RUI2",
       "device": "even",
-      "defconfig": "even_ksu_defconfig"
+      "defconfig": "even_ksu_defconfig",
+      "kbuilduser": "ISMASRULL",
+      "kbuildhost": "Kitsune Kawaii",
+      "kbuildtime": "Asia/Jakarta"
     },
     "withKernelSU": false,
-    "kbuilduser": "ISMASRULL",
-    "kbuildhost": "Kitsune Kawaii",
-    "kbuildtime": "Asia/Jakarta",
     "toolchains": [
       {
         "repo": "https://gitlab.com/LeCmnGend/clang",
