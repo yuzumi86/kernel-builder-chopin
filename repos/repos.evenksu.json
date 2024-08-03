@@ -7,19 +7,19 @@
       "device": "even",
       "defconfig": "even_ksu_defconfig",
       "kbuilduser": "ISMASRULL",
-      "kbuildhost": "Kitsune Kawaii",
+      "kbuildhost": "Trident",
       "kbuildtime": "Asia/Jakarta"
     },
     "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang",
-        "branch": "18",
+        "branch": "14",
         "name": "proton-clang",
         "binPath": ["bin"]
       }
     ],
-    "ccache": false,
+    "ccache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
