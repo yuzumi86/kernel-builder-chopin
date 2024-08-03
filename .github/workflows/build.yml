@@ -258,7 +258,7 @@ jobs:
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
           echo "PATH Variable: $PATH"
           make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }} 
-          make -j$(nproc --all) O=out \
+          make -j$(nproc --all) O=out 
 
       - name: "💛 Upload Image"
         uses: actions/upload-artifact@v3
