@@ -240,12 +240,12 @@ jobs:
           args: ${{ steps.generate-args.outputs.args }}
           arch: ${{ steps.generate-args.outputs.ARCH }}
         run: |
-          echo "PATH Variable: $PATH"
-          export ARCH=arm64
-          make O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
           export TZ=${{ env.KERNEL_TIME_REGION }}
           export KBUILD_BUILD_USER=${{ env.KERNEL_USER }}
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
+          echo "PATH Variable: $PATH"
+          make O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
+          
      
 
       - name: "🎶 Build kernel"
@@ -253,12 +253,12 @@ jobs:
         env:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
-          echo "PATH Variable: $PATH"
-          export ARCH=arm64
-          make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
           export TZ=${{ env.KERNEL_TIME_REGION }}
           export KBUILD_BUILD_USER=${{ env.KERNEL_USER }}
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
+          echo "PATH Variable: $PATH"
+          make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
+          
 
       - name: "💛 Upload Image"
         uses: actions/upload-artifact@v3
