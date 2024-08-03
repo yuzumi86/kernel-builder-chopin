@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "Liquwid-kernel-RELEASE-Proton-clang",
-      "repo": "https://github.com/liquidprjkt/liquid_kernel_realme_even",
-      "branch": "OSS-RUI2",
+      "name": "Trident-kernel-RELEASE-ksu",
+      "repo": "https://github.com/yuzumi86/kernel_realme_even",
+      "branch": "OSS-KSU-R",
       "device": "even",
       "defconfig": "even_ksu_defconfig",
       "kbuilduser": "ISMASRULL",
