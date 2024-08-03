@@ -314,9 +314,7 @@ jobs:
         run: |
           ls -al
 
-          if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image" ]; then
-            cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image ./AnyKernel3/
-          fi
+          
           if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz" ]; then
             cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz ./AnyKernel3/
           fi
@@ -326,9 +324,12 @@ jobs:
           if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dtbo.img" ]; then
             cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dtbo.img ./AnyKernel3/
           fi
+          
 
           cd AnyKernel3/
           zip -q -r "${{ env.anykernel }}.zip" *
+
+          
 
       - name: "💾 Upload AnyKernel3 image => (${{ env.builddate }})"
         uses: actions/upload-artifact@v3
@@ -343,7 +344,10 @@ jobs:
         if: ${{ env.useAnykernel == 'true' && env.release == 'true' }}
         with:
           tag_name: v${{ env.builddate }}.${{ github.run_number }}
-          files: "${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}.zip"
+          files: |
+                  ${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}.zip
+                  ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image
+                  ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz
           generate_release_notes: true
 
       - name: Test Upload to Telegram
