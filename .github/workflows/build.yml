@@ -241,7 +241,8 @@ jobs:
           arch: ${{ steps.generate-args.outputs.ARCH }}
         run: |
           echo "PATH Variable: $PATH"
-          make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
+          export ARCH=arm64
+          make O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
           export TZ=${{ env.KERNEL_TIME_REGION }}
           export KBUILD_BUILD_USER=${{ env.KERNEL_USER }}
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
@@ -253,7 +254,8 @@ jobs:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
           echo "PATH Variable: $PATH"
-          make ${{ env.args }}
+          export ARCH=arm64
+          make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
           export TZ=${{ env.KERNEL_TIME_REGION }}
           export KBUILD_BUILD_USER=${{ env.KERNEL_USER }}
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
