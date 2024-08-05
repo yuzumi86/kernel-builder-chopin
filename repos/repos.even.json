@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Trident-kernel-RELEASE-no-ksu",
-      "repo": "https://github.com/yuzumi86/kernel_realme_even",
-      "branch": "OSS-R",
+      "name": "Rui3-RMX3191-kernel-RELEASE-no-ksu",
+      "repo": "https://github.com/hui-dumpyard/kernel_realme_even",
+      "branch": "non-vdso",
       "device": "even",
-      "defconfig": "even_defconfig",
+      "defconfig": "k68v1_64_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "Trident",
       "kbuildtime": "Asia/Jakarta"
