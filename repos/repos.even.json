@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Rui3-RMX3191-kernel-RELEASE-no-ksu",
-      "repo": "https://github.com/hui-dumpyard/kernel_realme_even",
-      "branch": "non-vdso",
+      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191",
+      "branch": "even-rmui2",
       "device": "even",
-      "defconfig": "k68v1_64_defconfig",
+      "defconfig": "even_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "Trident",
       "kbuildtime": "Asia/Jakarta"
@@ -14,8 +14,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang",
-        "branch": "14",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
         "name": "proton-clang",
         "binPath": ["bin"]
       }
