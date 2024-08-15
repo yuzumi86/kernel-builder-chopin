@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Rui3-RMX3191-kernel-RELEASE-no-ksu",
+      "name": "RUI2-RMX3191-kernel-RELEASE-no-ksu",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191",
       "branch": "even-rmui2",
       "device": "even",
