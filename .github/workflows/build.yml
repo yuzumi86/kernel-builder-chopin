@@ -332,7 +332,7 @@ jobs:
           
 
       - name: "💾 Upload AnyKernel3 image => (${{ env.builddate }})"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: ${{ env.useAnykernel == 'true' }}
         with:
           name: "${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}"
