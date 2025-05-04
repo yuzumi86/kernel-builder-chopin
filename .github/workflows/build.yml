@@ -264,6 +264,15 @@ jobs:
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
           echo "PATH Variable: $PATH"
           make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }}
+          V=0 2>&1 | tee out/build.log
+
+      - name: Upload Log to telegram 
+        run: |
+              img=${{ env.KERNEL_NAME }}/out/build.log
+              curl -F document=@$img "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendDocument" \
+              -F chat_id="${{ secrets.TG_CHAT_ID }}" \
+              -F parse_mode=html \
+              -F disable_web_page_preview=true
           
 
       - name: "💛 Upload Image"
