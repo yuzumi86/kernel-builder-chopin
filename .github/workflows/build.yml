@@ -266,6 +266,8 @@ jobs:
           make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }}
           V=0 2>&1 | tee out/build.log
 
+        continue-on-error: true
+
       - name: Upload Log to telegram 
         run: |
               img=${{ env.KERNEL_NAME }}/out/build.log
