@@ -264,7 +264,7 @@ jobs:
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
           echo "PATH Variable: $PATH"
           make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }}
-          V=0 2>&1 | tee out/build.log
+          
 
         continue-on-error: true
 
