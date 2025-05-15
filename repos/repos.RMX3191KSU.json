@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "RMX3191-KSU+SUSFS",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "ksu-next-rui2",
+      "branch": "ksu-rui2",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "ISMASRULL",
