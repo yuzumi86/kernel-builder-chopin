@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "RMX3191-K419",
+      "name": "RMX3191-KSU+SUSFS",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "master",
+      "branch": "ksu-next-rui2",
       "device": "RMX3191",
-      "defconfig": "RMX3191_defconfig",
+      "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "TridentnotDeath",
       "kbuildtime": "Asia/Jakarta"
