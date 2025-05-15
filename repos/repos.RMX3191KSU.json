@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "RMX3191-KSU+SUSFS",
+      "name": "RMX3191-KSU+SUSFS-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "ksu-rui2",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
-      "kbuilduser": "ISMASRULL",
-      "kbuildhost": "TridentnotDeath",
+      "kbuilduser": "cumaRullXcaa",
+      "kbuildhost": "TridentnotDeath-BuildHost",
       "kbuildtime": "Asia/Jakarta"
       
     },
@@ -15,7 +15,7 @@
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "14",
+        "branch": "18",
         "name": "zyc-clang",
         "binPath": ["bin"]
       }
