@@ -14,7 +14,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/ZyCromerZ/Clang/releases/download/21.0.0git-20250517-release/Clang-21.0.0git-20250517.tar.gz",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "18",
         "name": "zyc-clang",
         "binPath": ["bin"]
       }
