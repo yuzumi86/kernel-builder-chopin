@@ -14,8 +14,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "14",
+        "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6573524.git",
+        "branch": "10.0",
         "name": "zyc-clang",
         "binPath": ["bin"]
       }
