@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "RMX3191_RUI4",
-      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
+      "name": "RMX3191_EVENR",
+      "repo": "https://github.com/yuzumi86/kernel_realme_mt6768.git",
       "branch": "master",
-      "device": "RMX3191",
-      "defconfig": "RMX3191_defconfig",
+      "device": "Even",
+      "defconfig": "even_defconfig",
       "kbuilduser": "ISMASRULL",
-      "kbuildhost": "TridentnotDeath",
+      "kbuildhost": "TridentnotDeath-BuildHost",
       "kbuildtime": "Asia/Jakarta"
       
     },
