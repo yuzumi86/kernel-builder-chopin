@@ -11,6 +11,17 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
+    "kernelSource": {
+      "name": "Gear-Kernel-Rui2",
+      "repo": "https://github.com/Realme-C25-Series-Development/kernel_realme_even.git",
+      "branch": "even-rmui2",
+      "device": "RMX3191",
+      "defconfig": "even_defconfig",
+      "kbuilduser": "ISMASRULL",
+      "kbuildhost": "TridentnotDeath-KbuildHost",
+      "kbuildtime": "Asia/Jakarta"
+      
+    },
     "withKernelSU": false,
     "toolchains": [
       {
