@@ -62,8 +62,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6573524.git",
-        "branch": "10.0",
+        "repo": "https://gitlab.com/PixelOS-Devices/playgroundtc.git",
+        "branch": "17",
         "name": "mylittleclang",
         "binPath": ["bin"]
       }
@@ -75,7 +75,7 @@
       "externalCommand": {
         "CROSS_COMPILE": "mylittleclang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "mylittleclang/bin/arm-linux-gnueabi-",
-        "LDGOLD": "mylittleclang/bin/aarch64-linux-gnu-ld.gold"
+        
       }
     },
     "AnyKernel3": {
