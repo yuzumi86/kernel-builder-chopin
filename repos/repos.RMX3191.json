@@ -62,8 +62,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git",
-        "branch": "lineage-20.0",
+        "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6573524.git",
+        "branch": "10.0",
         "name": "mylittleclang",
         "binPath": ["bin"]
       }
