@@ -49,6 +49,43 @@
   },
   {
     "kernelSource": {
+      "name": "RMX3191_RUI4-test-build",
+      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
+      "branch": "master",
+      "device": "RMX3191",
+      "defconfig": "RMX3191_defconfig",
+      "kbuilduser": "ISMASRULL",
+      "kbuildhost": "TridentnotDeath",
+      "kbuildtime": "Asia/Jakarta"
+
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "proton-clang/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/cumaRull/AnyKernel3",
+      "branch": "master"
+    }
+  },
+  {
+    "kernelSource": {
       "name": "Gear-Kernel-Rui2",
       "repo": "https://github.com/Realme-C25-Series-Development/kernel_realme_even.git",
       "branch": "even-rmui2",
