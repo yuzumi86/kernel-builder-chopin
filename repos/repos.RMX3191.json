@@ -74,18 +74,7 @@
       "CC": "mylittleclang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "mylittleclang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "mylittleclang/bin/arm-linux-gnueabi-",
-        "LD": "mylittleclang/bin/ld.lld",
-        "AR": "mylittleclang/bin/llvm-ar",
-        "NM": "mylittleclang/bin/llvm-nm",
-        "OBJCOPY": "mylittleclang/bin/llvm-objcopy",
-        "OBJDUMP": "mylittleclang/bin/llvm-objdump",
-        "READELF": "mylittleclang/bin/llvm-readelf",
-        "OBJSIZE": "mylittleclang/bin/llvm-size",
-        "STRIP": "mylittleclang/bin/llvm-strip",
-        "LDGOLD": "mylittleclang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "mylittleclang/bin/llvm-ar",
-        "LLVM_DIS": "mylittleclang/bin/llvm-dis"
+        "CROSS_COMPILE_ARM32": "mylittleclang/bin/arm-linux-gnueabi-"
       }
     },
     "AnyKernel3": {
