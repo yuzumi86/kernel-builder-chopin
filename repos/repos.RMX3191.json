@@ -74,7 +74,8 @@
       "CC": "mylittleclang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "mylittleclang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "mylittleclang/bin/arm-linux-gnueabi-"
+        "CROSS_COMPILE_ARM32": "mylittleclang/bin/arm-linux-gnueabi-",
+        "LDGOLD": "mylittleclang/bin/aarch64-linux-gnu-ld.gold"
       }
     },
     "AnyKernel3": {
