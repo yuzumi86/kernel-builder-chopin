@@ -57,5 +57,53 @@
       "repo": "https://github.com/cumaRull/AnyKernel3",
       "branch": "master"
     }
+  },
+  {
+    "kernelSource": {
+      "name": "Gear-Kernel-Rui2",
+      "repo": "https://github.com/Realme-C25-Series-Development/kernel_realme_even.git",
+      "branch": "even-rmui2",
+      "device": "RMX3191",
+      "defconfig": "even_defconfig",
+      "kbuilduser": "ISMASRULL",
+      "kbuildhost": "TridentnotDeath-KbuildHost",
+      "kbuildtime": "Asia/Jakarta"
+      
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git",
+        "branch": "lineage-20.0",
+        "name": "mylittleclang",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "mylittleclang/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "mylittleclang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "mylittleclang/bin/arm-linux-gnueabi-",
+        "LD": "mylittleclang/bin/ld.lld",
+        "AR": "mylittleclang/bin/llvm-ar",
+        "NM": "mylittleclang/bin/llvm-nm",
+        "OBJCOPY": "mylittleclang/bin/llvm-objcopy",
+        "OBJDUMP": "mylittleclang/bin/llvm-objdump",
+        "READELF": "mylittleclang/bin/llvm-readelf",
+        "OBJSIZE": "mylittleclang/bin/llvm-size",
+        "STRIP": "mylittleclang/bin/llvm-strip",
+        "LDGOLD": "mylittleclang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "mylittleclang/bin/llvm-ar",
+        "LLVM_DIS": "mylittleclang/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/cumaRull/AnyKernel3",
+      "branch": "master"
+    }
   }
 ]
