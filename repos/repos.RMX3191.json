@@ -103,7 +103,7 @@
       "repo": "https://github.com/Badmaneers/kernel_even_4.19.git",
       "branch": "release-candidate",
       "device": "RMX3191",
-      "defconfig": "c25_defconfig",
+      "defconfig": "c25_ksu_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "TridentnotDeath-KbuildHost",
       "kbuildtime": "Asia/Jakarta"
