@@ -211,7 +211,7 @@
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "branch": "14",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
