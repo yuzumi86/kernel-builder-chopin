@@ -201,7 +201,7 @@
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "upstreamed/rui2",
       "device": "RMX3191",
-      "defconfig": "RMX3191_defconfig",
+      "defconfig": "even_defconfig",
       "kbuilduser": "cumaRullXcaa",
       "kbuildhost": "KontolGedi-BuildHost",
       "kbuildtime": "Asia/Jakarta"
@@ -210,8 +210,8 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "14",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
