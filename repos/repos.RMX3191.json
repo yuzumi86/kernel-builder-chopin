@@ -197,11 +197,11 @@
   },
   {
     "kernelSource": {
-      "name": "SUKISU-RUI2",
+      "name": "Upstreamed-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "suki-dev",
-      "device": "realme Even",
-      "defconfig": "RMX3191_ksu_defconfig",
+      "branch": "upstreamed/rui2",
+      "device": "RMX3191",
+      "defconfig": "RMX3191_defconfig",
       "kbuilduser": "cumaRullXcaa",
       "kbuildhost": "KontolGedi-BuildHost",
       "kbuildtime": "Asia/Jakarta"
