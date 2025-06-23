@@ -100,7 +100,7 @@
   {
     "kernelSource": {
       "name": "Test-Kernel-Rui4",
-      "repo": "https://github.com/Badmaneers/kernel_even_4.19.git",
+      "repo": "https://github.com/cumaRull/kernel_even_4.19.git",
       "branch": "main",
       "device": "RMX3191",
       "defconfig": "c25_ksu_defconfig",
