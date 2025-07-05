@@ -51,8 +51,8 @@
   {
     "kernelSource": {
       "name": "Upstreamed/rui4",
-      "repo": "https://github.com/cumaRull/kernel_even_4.19.git",
-      "branch": "upstreamed/rui4",
+      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
+      "branch": "rui4-dev",
       "device": "RMX3191",
       "defconfig": "RMX3191_defconfig",
       "kbuilduser": "ISMASRULL",
