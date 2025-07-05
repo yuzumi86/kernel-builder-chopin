@@ -50,7 +50,7 @@
   
   {
     "kernelSource": {
-      "name": "Upstreamed/rui4",
+      "name": "UPSTREAMED-RUI4",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "rui4-dev",
       "device": "RMX3191",
