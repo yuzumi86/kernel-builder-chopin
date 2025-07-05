@@ -54,7 +54,7 @@
       "repo": "https://github.com/cumaRull/kernel_even_4.19.git",
       "branch": "upstreamed/rui4",
       "device": "RMX3191",
-      "defconfig": "c25_defconfig",
+      "defconfig": "RMX3191_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "TridentnotDeath",
       "kbuildtime": "Asia/Jakarta"
