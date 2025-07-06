@@ -52,7 +52,7 @@
     "kernelSource": {
       "name": "UPSTREAMED-RUI4",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "rui4-dev",
+      "branch": "susfs-rui4",
       "device": "RMX3191",
       "defconfig": "RMX3191_defconfig",
       "kbuilduser": "ISMASRULL",
