@@ -100,7 +100,7 @@
     "kernelSource": {
       "name": "UPSTREAMED-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "upstreamed/rui2-dev",
+      "branch": "rui2-upstreamed",
       "device": "RMX3191",
       "defconfig": "even_defconfig",
       "kbuilduser": "ISMASRULL",
