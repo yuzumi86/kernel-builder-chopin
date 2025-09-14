@@ -343,7 +343,7 @@
   },
   {
     "kernelSource": {
-      "name": "RMX3191-SUKISU-RUI2",
+      "name": "RMX3191-SUKISU-RUI2-Update",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "suki-dev",
       "device": "RMX3191",
@@ -353,7 +353,7 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
