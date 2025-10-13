@@ -208,7 +208,7 @@ jobs:
           if [ -d "./drivers/kernelsu" ]; then
             rm -rf "./drivers/kernelsu"
           fi
-
+          git submodule add -b next-susfs_v1.5.5-v1.5.7 https://github.com/sidex15/KernelSU-Next.git && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
           curl -LSs "https://raw.githubusercontent.com/sidex15/KernelSU-Next/refs/heads/next-susfs_v1.5.5-v1.5.7/kernel/setup.sh" | bash 
           
       # - name: 开启lxc和docker配置
