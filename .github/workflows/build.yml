@@ -52,6 +52,7 @@ jobs:
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
+      withKPM: ${{ matrix.repos.withKPM }}
       ccache: ${{ matrix.repos.ccache }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
@@ -264,7 +265,20 @@ jobs:
           export KBUILD_BUILD_HOST=${{ env.KERNEL_HOST }}
           echo "PATH Variable: $PATH"
           make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }}
-          
+
+      - name: "🥀 Kpm Patch"
+        working-directory: ${{ env.KERNEL_NAME }}
+        env:
+          args: ${{ steps.generate-args.outputs.args }}
+          if: ${{ env.withKPM == 'true' }}
+        run: |
+          cd ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/
+          wget -q https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/0.12.0/patch_linux
+          chmod +x patch_linux
+          ./patch_linux
+          rm -rf Image* && mv oImage Image
+          gzip -c Image > Image.gz
+        #  cat Image.gz dtb.img > Image.gz-dtb
 
       - name: "💛 Upload Image"
         uses: actions/upload-artifact@v4
