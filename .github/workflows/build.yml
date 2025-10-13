@@ -210,7 +210,7 @@ jobs:
           fi
 
           curl -LSs "https://raw.githubusercontent.com/sidex15/KernelSU-Next/refs/heads/next-susfs_v1.5.5-v1.5.7/kernel/setup.sh" | bash 
-          
+          cat ${{ env.DEFCONFIG_NAME }}
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
       #   env:
