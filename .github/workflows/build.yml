@@ -208,8 +208,8 @@ jobs:
           if [ -d "./drivers/kernelsu" ]; then
             rm -rf "./drivers/kernelsu"
           fi
-          git submodule add -b next-susfs-experimental https://github.com/sidex15/KernelSU-Next.git && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
-          curl -LSs "https://raw.githubusercontent.com/sidex15/KernelSU-Next/refs/heads/next-susfs-experimental/kernel/setup.sh" | bash -s next-susfs-experimental
+          git submodule add -b susfs-main https://github.com/SukiSU-Ultra/SukiSU-Ultra.git && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
+          curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
       #   env:
