@@ -211,11 +211,6 @@ jobs:
 
           curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
           
-          echo -e "CONFIG_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-          echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-          echo -e "CONFIG_KPROBE_EVENTS=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-
-          cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
       #   env:
@@ -270,7 +265,7 @@ jobs:
         working-directory: ${{ env.KERNEL_NAME }}
         env:
           arch: ${{ steps.generate-args.outputs.ARCH }}
-          if: ${{ env.withKPM == 'true' }}
+        if: ${{ env.withKPM == 'true' }}
         run: |
           cd ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/
           wget -q https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/0.12.0/patch_linux
