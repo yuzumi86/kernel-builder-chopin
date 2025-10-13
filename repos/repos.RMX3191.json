@@ -253,7 +253,7 @@
   },
   {
     "kernelSource": {
-      "name": "RMX3191-SUKISU-RUI2-Update",
+      "name": "RMX3191-SUSFS-RUI2-Update",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "rui2x",
       "device": "RMX3191",
