@@ -267,7 +267,7 @@ jobs:
           make -j$(nproc --all) O=out ARCH=arm64 ${{ env.args }}
 
       - name: "🥀 Kpm Patch"
-        working-directory: ${{ env.KERNEL_NAME }}/${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/
+        working-directory: ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/
         env:
           args: ${{ steps.generate-args.outputs.args }}
           if: ${{ env.withKPM == 'true' }}
