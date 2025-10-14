@@ -102,7 +102,7 @@
   },
   {
     "kernelSource": {
-      "name": "RMX3191-KSU+SUSFS-RUI2",
+      "name": "RMX3191-KSUNext+SUSFS-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "suki-dev",
       "device": "RMX3191",
@@ -112,7 +112,7 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "withKPM": true,
     "toolchains": [
       {
