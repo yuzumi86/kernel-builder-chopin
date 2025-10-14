@@ -161,7 +161,7 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "withKPM": true,
     "toolchains": [
       {
