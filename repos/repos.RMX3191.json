@@ -48,109 +48,7 @@
       "branch": "master"
     }
   },
-
-    {
-    "kernelSource": {
-      "name": "RMX3191_RUI4",
-      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "master",
-      "device": "RMX3191",
-      "defconfig": "RMX3191_defconfig",
-      "kbuilduser": "ISMASRULL",
-      "kbuildhost": "TridentnotDeath",
-      "kbuildtime": "Asia/Jakarta"
-
-    },
-    "withKernelSU": false,
-    "withKPM": false,
-    "toolchains": [
-      {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
-        "binPath": ["bin"]
-      }
-    ],
-    "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/cumaRull/AnyKernel3",
-      "branch": "master"
-    }
-  },
   
-  
-  {
-    "kernelSource": {
-      "name": "Test-Kernel-Rui2",
-      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "rui2",
-      "device": "RMX3191",
-      "defconfig": "even_defconfig",
-      "kbuilduser": "ISMASRULL",
-      "kbuildhost": "TridentnotDeath-KbuildHost",
-      "kbuildtime": "Asia/Jakarta"
-      
-    },
-    "withKernelSU": false,
-    "withKPM": false,
-    "toolchains": [
-      {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
-        "binPath": ["bin"]
-      }
-    ],
-    
-     "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
-        
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/cumaRull/AnyKernel3",
-      "branch": "master"
-    }
-  },
   {
     "kernelSource": {
       "name": "Test-Kernel-Rui4",
@@ -255,7 +153,7 @@
     "kernelSource": {
       "name": "RMX3191-SUSFS-RUI2-Update",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "rui2x",
+      "branch": "susfs-v1.5.8",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "cumaRullXcaa",
@@ -304,7 +202,7 @@
     "kernelSource": {
       "name": "RMX3191-NONKSU-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "ksu-rui2",
+      "branch": "rui2-backupx",
       "device": "RMX3191",
       "defconfig": "RMX3191_defconfig",
       "kbuilduser": "cumaRullXcaa",
