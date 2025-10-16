@@ -112,8 +112,8 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": true,
-    "withKPM": true,
+    "withKernelSU": false,
+    "withKPM": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
