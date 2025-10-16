@@ -104,7 +104,7 @@
     "kernelSource": {
       "name": "RMX3191-KSUNext+SUSFS-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "suki-dev",
+      "branch": "susfs-dev-rui2",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "cumaRullXcaa",
@@ -112,7 +112,7 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "withKPM": true,
     "toolchains": [
       {
@@ -149,55 +149,7 @@
       "branch": "master"
     }
   },
-  {
-    "kernelSource": {
-      "name": "RMX3191-SUSFS-RUI2-Update",
-      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "susfs-v1.5.8",
-      "device": "RMX3191",
-      "defconfig": "RMX3191_ksu_defconfig",
-      "kbuilduser": "cumaRullXcaa",
-      "kbuildhost": "KontolGedi-BuildHost",
-      "kbuildtime": "Asia/Jakarta"
-      
-    },
-    "withKernelSU": false,
-    "withKPM": true,
-    "toolchains": [
-      {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "14",
-        "name": "mylittle-clang",
-        "binPath": ["bin"]
-      }
-    ],
-    "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "mylittle-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
-        "LD": "mylittle-clang/bin/ld.lld",
-        "AR": "mylittle-clang/bin/llvm-ar",
-        "NM": "mylittle-clang/bin/llvm-nm",
-        "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
-        "OBJDUMP": "mylittle-clang/bin/llvm-objdump",
-        "READELF": "mylittle-clang/bin/llvm-readelf",
-        "OBJSIZE": "mylittle-clang/bin/llvm-size",
-        "STRIP": "mylittle-clang/bin/llvm-strip",
-        "LDGOLD": "mylittle-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "mylittle-clang/bin/llvm-ar",
-        "LLVM_DIS": "mylittle-clang/bin/llvm-dis"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/cumaRull/AnyKernel3",
-      "branch": "master"
-    }
-  },
+  
   {
     "kernelSource": {
       "name": "RMX3191-NONKSU-RUI2",
