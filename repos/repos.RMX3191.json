@@ -129,7 +129,6 @@
       "externalCommand": {
         "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
-        "LD": "mylittle-clang/bin/ld.lld",
         "AR": "mylittle-clang/bin/llvm-ar",
         "NM": "mylittle-clang/bin/llvm-nm",
         "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
