@@ -58,6 +58,7 @@ jobs:
       # Ksu
       KSU_REPO: ${{ matrix.repos.KsuSource.ksurepo }}
       KSU_BRANCH: ${{ matrix.repos.KsuSource.ksubranch }}
+      KSU_SETUP: ${{ matrix.repos.KsuSource.ksusetup }}
       withKernelSU: ${{ matrix.repos.KsuSource.withKernelSU }}
     steps:
       - name: "⭐ Install prerequisites"
@@ -217,7 +218,7 @@ jobs:
           fi
           
           git submodule add -b $KSU_BRANCH $KSU_REPO && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
-      #    curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/refs/heads/susfs-main/kernel/setup.sh" | bash -s susfs-main
+          curl -LSs "$KSU_SETUP" | bash -s $KSU_BRANCH
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
       #   env:

@@ -14,6 +14,7 @@
     "KsuSource": {
     "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
     "ksubranch": "susfs",
+    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs/kernel/setup.sh",
     "withKernelSU": false
     },
     "withKPM": false,
@@ -68,6 +69,7 @@
     "KsuSource": {
     "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
     "ksubranch": "susfs",
+    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs/kernel/setup.sh",
     "withKernelSU": false
     },
     "withKPM": false,
@@ -123,6 +125,7 @@
     "KsuSource": {
     "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
     "ksubranch": "susfs",
+    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": false,
@@ -166,6 +169,7 @@
     "KsuSource": {
     "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
     "ksubranch": "susfs",
+    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs/kernel/setup.sh",
     "withKernelSU": false
     },
     "withKPM": false,
