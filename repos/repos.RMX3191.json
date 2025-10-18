@@ -123,9 +123,9 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
     "ksubranch": "susfs-legacy",
-    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs-legacy/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/susfs-legacy/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": false,
@@ -170,7 +170,7 @@
     "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs-main",
     "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
-    "withKernelSU": true
+    "withKernelSU": false
     },
     "withKPM": false,
     "toolchains": [
