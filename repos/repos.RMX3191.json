@@ -170,9 +170,9 @@
     "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs-main",
     "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
-    "withKernelSU": false
+    "withKernelSU": true
     },
-    "withKPM": false,
+    "withKPM": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
