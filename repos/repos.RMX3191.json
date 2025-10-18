@@ -114,7 +114,7 @@
     "kernelSource": {
       "name": "RMX3191-x+SUSFS-RUI2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "susfs-dev-r2",
+      "branch": "ksu-next",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "cumaRullXcaa",
@@ -123,9 +123,9 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/sidex15/KernelSU-Next.git",
-    "ksubranch": "next-susfs",
-    "ksusetup": "https://raw.githubusercontent.com/sidex15/KernelSU-Next/next-susfs/kernel/setup.sh",
+    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksubranch": "susfs-legacy",
+    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs-legacy/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": false,
