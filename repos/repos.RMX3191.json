@@ -175,8 +175,8 @@
     "withKPM": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "repo": "https://gitlab.com/nekoshirro/Alchemist-LLVM.git",
+        "branch": "LTO-Thin",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
