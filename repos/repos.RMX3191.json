@@ -151,7 +151,11 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
+    "KsuSource": {
+    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksubranch": "susfs"
     "withKernelSU": false,
+    },
     "withKPM": false,
     "toolchains": [
       {

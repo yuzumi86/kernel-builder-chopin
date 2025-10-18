@@ -51,14 +51,14 @@ jobs:
       KERNEL_TIME_REGION: ${{ matrix.repos.kernelSource.kbuildtime }}
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
-      withKernelSU: ${{ matrix.repos.withKernelSU }}
       withKPM: ${{ matrix.repos.withKPM }}
       ccache: ${{ matrix.repos.ccache }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
       # Ksu
-      KSU_REPO: ${{ matrix.repos.kernelSource.KSURepos }}
-      KSU_BRANCH: ${{ matrix.repos.kernelSource.KSUBranch }}
+      KSU_REPO: ${{ matrix.repos.KsuSource.ksurepo }}
+      KSU_BRANCH: ${{ matrix.repos.KsuSource.ksubranch }}
+      withKernelSU: ${{ matrix.repos.KsuSource.withKernelSU }}
     steps:
       - name: "⭐ Install prerequisites"
         run: |
