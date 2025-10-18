@@ -56,6 +56,9 @@ jobs:
       ccache: ${{ matrix.repos.ccache }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
+      # Ksu
+      KSU_REPO: ${{ matrix.repos.kernelSource.KSURepos }}
+      KSU_BRANCH: ${{ matrix.repos.kernelSource.KSUBranch }}
     steps:
       - name: "⭐ Install prerequisites"
         run: |
@@ -213,8 +216,8 @@ jobs:
             rm -rf "./KernelSU-Next"
           fi
           
-          git submodule add -b susfs-main https://github.com/rsuntk/KernelSU.git && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
-          curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/refs/heads/susfs-main/kernel/setup.sh" | bash -s susfs-main
+          git submodule add -b $KSU_BRANCH $KSU_REPO && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
+      #    curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/refs/heads/susfs-main/kernel/setup.sh" | bash -s susfs-main
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
       #   env:
