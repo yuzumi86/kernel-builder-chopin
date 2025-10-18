@@ -11,7 +11,11 @@
       "kbuildtime": "Asia/Jakarta"
 
     },
-    "withKernelSU": false,
+    "KsuSource": {
+    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksubranch": "susfs",
+    "withKernelSU": false
+    },
     "withKPM": false,
     "toolchains": [
       {
@@ -61,7 +65,11 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": false,
+    "KsuSource": {
+    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksubranch": "susfs",
+    "withKernelSU": false
+    },
     "withKPM": false,
     "toolchains": [
       {
@@ -112,7 +120,11 @@
       "kbuildtime": "Asia/Jakarta"
       
     },
-    "withKernelSU": true,
+    "KsuSource": {
+    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksubranch": "susfs",
+    "withKernelSU": true
+    },
     "withKPM": false,
     "toolchains": [
       {
