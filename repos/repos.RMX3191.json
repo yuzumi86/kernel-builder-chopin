@@ -158,7 +158,7 @@
     "kernelSource": {
       "name": "RMX3191-SUSFSDev-RUI2+Suki",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "susfs-dev-rui2",
+      "branch": "suki-dev",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "cumaRullXcaa",
