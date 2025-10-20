@@ -59,7 +59,7 @@
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "upstreamed-rui2",
       "device": "RMX3191",
-      "defconfig": "RMX3191_defconfig",
+      "defconfig": "even_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "TridentnotDeath",
       "kbuildtime": "Asia/Jakarta"
