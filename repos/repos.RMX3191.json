@@ -211,7 +211,7 @@
     "kernelSource": {
       "name": "RMX3191-SUSFSDev-RUI2+Suki",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "suki-dev",
+      "branch": "rui2-susfs",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "cumaRullXcaa",
@@ -220,9 +220,9 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra/tree/37300fefd4f95b598449b69648346fa4c04960b2",
+    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs-main",
-    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/37300fefd4f95b598449b69648346fa4c04960b2/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": true,
