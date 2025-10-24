@@ -57,9 +57,9 @@
     "kernelSource": {
       "name": "Test-kernel-ups-r2",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "upstreamed-rui2",
+      "branch": "rui2-upstreamed",
       "device": "RMX3191",
-      "defconfig": "even_defconfig",
+      "defconfig": "RMX3191_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "TridentnotDeath",
       "kbuildtime": "Asia/Jakarta"
@@ -74,30 +74,30 @@
     "withKPM": false,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "18",
+        "name": "mylittle-clang",
         "binPath": ["bin"]
       }
     ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "mylittle-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+        "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
+        "LD": "mylittle-clang/bin/ld.lld",
+        "AR": "mylittle-clang/bin/llvm-ar",
+        "NM": "mylittle-clang/bin/llvm-nm",
+        "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
+        "OBJDUMP": "mylittle-clang/bin/llvm-objdump",
+        "READELF": "mylittle-clang/bin/llvm-readelf",
+        "OBJSIZE": "mylittle-clang/bin/llvm-size",
+        "STRIP": "mylittle-clang/bin/llvm-strip",
+        "LDGOLD": "mylittle-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "mylittle-clang/bin/llvm-ar",
+        "LLVM_DIS": "mylittle-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
