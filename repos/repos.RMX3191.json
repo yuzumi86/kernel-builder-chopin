@@ -55,60 +55,6 @@
   },
   {
     "kernelSource": {
-      "name": "Test-kernel-ups-r2",
-      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "rui2-upstreamed",
-      "device": "RMX3191",
-      "defconfig": "RMX3191_defconfig",
-      "kbuilduser": "ISMASRULL",
-      "kbuildhost": "TridentnotDeath",
-      "kbuildtime": "Asia/Jakarta"
-
-    },
-    "KsuSource": {
-    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
-    "ksubranch": "susfs",
-    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/susfs/kernel/setup.sh",
-    "withKernelSU": false
-    },
-    "withKPM": false,
-    "toolchains": [
-      {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
-        "name": "mylittle-clang",
-        "binPath": ["bin"]
-      }
-    ],
-    "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "mylittle-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
-        "LD": "mylittle-clang/bin/ld.lld",
-        "AR": "mylittle-clang/bin/llvm-ar",
-        "NM": "mylittle-clang/bin/llvm-nm",
-        "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
-        "OBJDUMP": "mylittle-clang/bin/llvm-objdump",
-        "READELF": "mylittle-clang/bin/llvm-readelf",
-        "OBJSIZE": "mylittle-clang/bin/llvm-size",
-        "STRIP": "mylittle-clang/bin/llvm-strip",
-        "LDGOLD": "mylittle-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "mylittle-clang/bin/llvm-ar",
-        "LLVM_DIS": "mylittle-clang/bin/llvm-dis"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/cumaRull/AnyKernel3",
-      "branch": "master"
-    }
-  },
-  {
-    "kernelSource": {
       "name": "Test-Kernel-Rui4",
       "repo": "https://github.com/cumaRull/kernel_even_4.19.git",
       "branch": "main",
@@ -209,7 +155,7 @@
 
   {
     "kernelSource": {
-      "name": "RMX3191-SUSFSDev-RUI2+Suki",
+      "name": "RMX3191-SUSFSDev-RUI2+sukikpm",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "rui2-susfs",
       "device": "RMX3191",
@@ -220,12 +166,12 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/WildKernels/Wild_KSU.git",
+    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs",
-    "ksusetup": "https://raw.githubusercontent.com/WildKernels/Wild_KSU/wild/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
     "withKernelSU": true
     },
-    "withKPM": false,
+    "withKPM": true,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
