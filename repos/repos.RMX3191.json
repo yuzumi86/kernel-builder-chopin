@@ -196,7 +196,49 @@
       "branch": "master"
     }
   },
-  
+   {
+    "kernelSource": {
+      "name": "RMX3191-SUSFSDev-RUI2+tracepoint",
+      "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
+      "branch": "ksu-tracepoint",
+      "device": "RMX3191",
+      "defconfig": "RMX3191_ksu_defconfig",
+      "kbuilduser": "cumaRullXcaa",
+      "kbuildhost": "KontolGedi-BuildHost",
+      "kbuildtime": "Asia/Jakarta"
+      
+    },
+    "KsuSource": {
+    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
+    "ksubranch": "susfs-main",
+    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
+    "withKernelSU": true
+    },
+    "withKPM": true,
+    "toolchains": [
+      {
+        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
+        "branch": "18",
+        "name": "mylittle-clang",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "mylittle-clang/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/cumaRull/AnyKernel3",
+      "branch": "master"
+    }
+  },
   {
     "kernelSource": {
       "name": "RMX3191-NONKSU-RUI2",
