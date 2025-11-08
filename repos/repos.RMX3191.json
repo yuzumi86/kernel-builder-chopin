@@ -211,7 +211,7 @@
     "KsuSource": {
     "ksurepo": "https://github.com/rsuntk/KernelSU.git",
     "ksubranch": "susfs-main",
-    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/refs/heads/susfs-main/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": false,
