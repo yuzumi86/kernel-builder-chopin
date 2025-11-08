@@ -1,6 +1,6 @@
 [
   {
-    "kernelSource": {
+    "kernelSource": { 
       "name": "RMX3191_RUI3",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
       "branch": "rui3-ksu",
@@ -198,9 +198,9 @@
   },
    {
     "kernelSource": {
-      "name": "RMX3191-SUSFSDev-RUI2+tracepoint",
+      "name": "RMX3191-SUSFSDev-RUI2+Rsuntk",
       "repo": "https://github.com/cumaRull/kernel_realme_RMX3191.git",
-      "branch": "ksu-tracepoint",
+      "branch": "rui2-susfs",
       "device": "RMX3191",
       "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "cumaRullXcaa",
@@ -209,12 +209,12 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
+    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
     "ksubranch": "susfs-main",
-    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/kernel/setup.sh",
     "withKernelSU": true
     },
-    "withKPM": true,
+    "withKPM": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
