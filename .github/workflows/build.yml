@@ -220,7 +220,7 @@ jobs:
           git submodule add -b $KSU_BRANCH $KSU_REPO && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
           curl -LSs "$KSU_SETUP" | bash -s $KSU_BRANCH
           cd KernelSU
-          git reset --hard 3701d47f
+      #    git reset --hard 3701d47f
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
       #   env:
