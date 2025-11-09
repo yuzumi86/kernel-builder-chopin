@@ -174,8 +174,7 @@
     "withKPM": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
