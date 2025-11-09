@@ -59,6 +59,7 @@ jobs:
       KSU_REPO: ${{ matrix.repos.KsuSource.ksurepo }}
       KSU_BRANCH: ${{ matrix.repos.KsuSource.ksubranch }}
       KSU_SETUP: ${{ matrix.repos.KsuSource.ksusetup }}
+      KSU_REVERT: ${{ matrix.repos.KsuSource.ksuver }}
       withKernelSU: ${{ matrix.repos.KsuSource.withKernelSU }}
     steps:
       - name: "⭐ Install prerequisites"
@@ -220,6 +221,7 @@ jobs:
           git submodule add -b $KSU_BRANCH $KSU_REPO && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
           curl -LSs "$KSU_SETUP" | bash -s $KSU_BRANCH
           cd KernelSU
+          $KSU_REVERT
       #    git reset --hard 3701d47f
       # - name: 开启lxc和docker配置
       #   working-directory: ${{ env.KERNEL_NAME }}
