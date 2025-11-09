@@ -130,8 +130,7 @@
     "withKPM": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/21.0.0git-20250315-release/Clang-21.0.0git-20250315.tar.gz",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
@@ -169,13 +168,13 @@
     "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs-main",
     "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
-    "ksuver": "ls",
+    "ksuver": "git reset --hard 3701d47f",
     "withKernelSU": true
     },
     "withKPM": true,
     "toolchains": [
       {
-        "url": "https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20250129-release/Clang-20.0.0git-20250129.tar.gz",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/21.0.0git-20250315-release/Clang-21.0.0git-20250315.tar.gz",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
@@ -259,8 +258,7 @@
     "withKPM": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/clangsantoni/zyc_clang.git",
-        "branch": "18",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/21.0.0git-20250315-release/Clang-21.0.0git-20250315.tar.gz",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
