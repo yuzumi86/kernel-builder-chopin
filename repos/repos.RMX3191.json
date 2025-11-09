@@ -174,7 +174,7 @@
     "withKPM": true,
     "toolchains": [
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20250129-release/Clang-20.0.0git-20250129.tar.gz",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
