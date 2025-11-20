@@ -66,9 +66,9 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
+    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
     "ksubranch": "susfs-main",
-    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/susfs-main/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": true,
