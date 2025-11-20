@@ -66,11 +66,11 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
+    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs-main",
-    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh",
-    "ksuver": "git reset --hard 9856539",
-    "withKernelSU": false
+    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/susfs-main/kernel/setup.sh",
+    "ksuver": "git reset --hard 3701d47f",
+    "withKernelSU": true
     },
     "withKPM": false,
     "toolchains": [
