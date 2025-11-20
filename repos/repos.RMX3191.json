@@ -69,6 +69,7 @@
     "ksurepo": "https://github.com/rsuntk/KernelSU.git",
     "ksubranch": "susfs-main",
     "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh",
+    "ksuver": "git reset --hard 9856539",
     "withKernelSU": false
     },
     "withKPM": false,
