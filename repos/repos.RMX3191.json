@@ -57,7 +57,7 @@
     "kernelSource": {
       "name": "susfs-Rui4",
       "repo": "https://github.com/cumaRull/kernel_realme_even-4.19.git",
-      "branch": "rui4-susfs",
+      "branch": "rui4-sus",
       "device": "RMX3191",
       "defconfig": "c25_defconfig",
       "kbuilduser": "ISMASRULL",
@@ -66,9 +66,9 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
+    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
     "ksubranch": "susfs-main",
-    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/refs/heads/susfs-main/kernel/setup.sh",
+    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/susfs-main/kernel/setup.sh",
     "withKernelSU": true
     },
     "withKPM": true,
