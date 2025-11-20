@@ -217,8 +217,26 @@ jobs:
           if [ -d "./KernelSU-Next" ]; then
             rm -rf "./KernelSU-Next"
           fi
+
+          if [ -d "./SukiSU-Ultra" ]; then
+            rm -rf "./SukiSU-Ultra"
+          fi
           
           git submodule add -b $KSU_BRANCH $KSU_REPO && cd drivers && ln -sf ../KernelSU/kernel kernelsu && cd ..
+          if [ -d "./KernelSU" ]; then
+            rm -rf "./KernelSU"
+          fi
+          if [ -d "./drivers/kernelsu" ]; then
+            rm -rf "./drivers/kernelsu"
+          fi
+
+          if [ -d "./KernelSU-Next" ]; then
+            rm -rf "./KernelSU-Next"
+          fi
+
+          if [ -d "./SukiSU-Ultra" ]; then
+            rm -rf "./SukiSU-Ultra"
+          fi
           curl -LSs "$KSU_SETUP" | bash -s $KSU_BRANCH
           cd KernelSU
           $KSU_REVERT
