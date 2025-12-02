@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Rui4-bpf-test",
       "repo": "https://github.com/yuzumi86/kernel_realme_even-4.19.git",
-      "branch": "bpf",
+      "branch": "rebase",
       "device": "RMX3191",
       "defconfig": "c25_defconfig",
       "kbuilduser": "ISMASRULL",
