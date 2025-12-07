@@ -52,5 +52,59 @@
       "repo": "https://github.com/cumaRull/AnyKernel3",
       "branch": "master"
     }
+  },
+    {
+    "kernelSource": {
+      "name": "Rui3-test",
+      "repo": "https://github.com/yuzumi86/kernel_realme_RMX3191.git",
+      "branch": "rebase",
+      "device": "RMX3191",
+      "defconfig": "RMX3191_defconfig",
+      "kbuilduser": "ISMASRULL",
+      "kbuildhost": "TridentnotDeath-KbuildHost",
+      "kbuildtime": "Asia/Jakarta"
+      
+    },
+    "KsuSource": {
+    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
+    "ksubranch": "susfs-main",
+    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/susfs-main/kernel/setup.sh",
+    "withKernelSU": false
+    },
+    "withKPM": true,
+    "toolchains": [
+      {
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "mylittle-clang",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "mylittle-clang/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
+        "LD": "mylittle-clang/bin/ld.lld",
+        "AR": "mylittle-clang/bin/llvm-ar",
+        "NM": "mylittle-clang/bin/llvm-nm",
+        "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
+        "OBJDUMP": "mylittle-clang/bin/llvm-objdump",
+        "READELF": "mylittle-clang/bin/llvm-readelf",
+        "OBJSIZE": "mylittle-clang/bin/llvm-size",
+        "STRIP": "mylittle-clang/bin/llvm-strip",
+        "LDGOLD": "mylittle-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "mylittle-clang/bin/llvm-ar",
+        "LLVM_DIS": "mylittle-clang/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/cumaRull/AnyKernel3",
+      "branch": "master"
+    }
   }
 ]
