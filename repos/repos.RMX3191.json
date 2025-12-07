@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Rui4-rebase-test",
       "repo": "https://github.com/yuzumi86/kernel_realme_even-4.19.git",
-      "branch": "rebase",
+      "branch": "bpf",
       "device": "RMX3191",
       "defconfig": "c25_defconfig",
       "kbuilduser": "ISMASRULL",
@@ -57,7 +57,7 @@
     "kernelSource": {
       "name": "Rui3-test",
       "repo": "https://github.com/yuzumi86/kernel_realme_RMX3191.git",
-      "branch": "rebase",
+      "branch": "rui3-dev",
       "device": "RMX3191",
       "defconfig": "RMX3191_defconfig",
       "kbuilduser": "ISMASRULL",
