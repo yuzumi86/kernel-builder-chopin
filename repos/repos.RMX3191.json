@@ -1,65 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Rui4-rksu",
-      "repo": "https://github.com/yuzumi86/kernel_realme_even-4.19.git",
-      "branch": "bpf",
+      "name": "Rui2-sukisu",
+      "repo": "https://github.com/yuzumi86/kernel_realme_RMX3191.git",
+      "branch": "rui2-susfs",
       "device": "RMX3191",
-      "defconfig": "c25_defconfig",
-      "kbuilduser": "ISMASRULL",
-      "kbuildhost": "TridentnotDeath-KbuildHost",
-      "kbuildtime": "Asia/Jakarta"
-      
-    },
-    "KsuSource": {
-    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
-    "ksubranch": "susfs-rksu-master",
-    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/susfs-rksu-master/kernel/setup.sh",
-    "ksuver": "",
-    "withKernelSU": true
-    },
-    "withKPM": true,
-    "toolchains": [
-      {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-16.0.0_r3/clang-r563880.tar.gz",
-        "name": "mylittle-clang",
-        "binPath": ["bin"]
-      }
-    ],
-    "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "mylittle-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
-        "LD": "mylittle-clang/bin/ld.lld",
-        "AR": "mylittle-clang/bin/llvm-ar",
-        "NM": "mylittle-clang/bin/llvm-nm",
-        "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
-        "OBJDUMP": "mylittle-clang/bin/llvm-objdump",
-        "READELF": "mylittle-clang/bin/llvm-readelf",
-        "OBJSIZE": "mylittle-clang/bin/llvm-size",
-        "STRIP": "mylittle-clang/bin/llvm-strip",
-        "LDGOLD": "mylittle-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "mylittle-clang/bin/llvm-ar",
-        "LLVM_DIS": "mylittle-clang/bin/llvm-dis"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/cumaRull/AnyKernel3",
-      "branch": "master"
-    }
-  },
-  {
-    "kernelSource": {
-      "name": "Rui4-sukisu",
-      "repo": "https://github.com/yuzumi86/kernel_realme_even-4.19.git",
-      "branch": "bpf",
-      "device": "RMX3191",
-      "defconfig": "c25_defconfig",
+      "defconfig": "RMX3191_ksu_defconfig",
       "kbuilduser": "ISMASRULL",
       "kbuildhost": "TridentnotDeath-KbuildHost",
       "kbuildtime": "Asia/Jakarta"
@@ -75,7 +21,7 @@
     "withKPM": true,
     "toolchains": [
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-16.0.0_r3/clang-r563880.tar.gz",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-14.0.0_r29/clang-r510928.tar.gz",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
