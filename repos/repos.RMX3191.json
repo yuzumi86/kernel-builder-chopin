@@ -32,18 +32,7 @@
       "CC": "mylittle-clang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "mylittle-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-",
-        "LD": "mylittle-clang/bin/ld.lld",
-        "AR": "mylittle-clang/bin/llvm-ar",
-        "NM": "mylittle-clang/bin/llvm-nm",
-        "OBJCOPY": "mylittle-clang/bin/llvm-objcopy",
-        "OBJDUMP": "mylittle-clang/bin/llvm-objdump",
-        "READELF": "mylittle-clang/bin/llvm-readelf",
-        "OBJSIZE": "mylittle-clang/bin/llvm-size",
-        "STRIP": "mylittle-clang/bin/llvm-strip",
-        "LDGOLD": "mylittle-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "mylittle-clang/bin/llvm-ar",
-        "LLVM_DIS": "mylittle-clang/bin/llvm-dis"
+        "CROSS_COMPILE_ARM32": "mylittle-clang/bin/arm-linux-gnueabi-"
       }
     },
     "AnyKernel3": {
