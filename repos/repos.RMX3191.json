@@ -12,9 +12,9 @@
       
     },
     "KsuSource": {
-    "ksurepo": "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git",
-    "ksubranch": "builtin",
-    "ksusetup": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/builtin/kernel/setup.sh",
+    "ksurepo": "https://github.com/rsuntk/KernelSU.git",
+    "ksubranch": "susfs-rksu-master",
+    "ksusetup": "https://raw.githubusercontent.com/rsuntk/KernelSU/susfs-rksu-master/kernel/setup.sh",
     "ksuver": "",
     "withKernelSU": true
     },
