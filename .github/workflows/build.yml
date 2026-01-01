@@ -341,7 +341,7 @@ jobs:
           arch: ${{ steps.generate-args.outputs.ARCH }}
         with:
           name: dtbo.img-${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}-${{ env.builddate }}
-          path: ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/*.dtbo
+          path: ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dts/mediatek/*.dtbo
           if-no-files-found: ignore
           retention-days: 7
 
@@ -357,11 +357,11 @@ jobs:
           if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz" ]; then
             cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz ./AnyKernel3/
           fi
-          if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dtbo" ]; then
-            cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dtbo ./AnyKernel3/
+          if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dts/mediatek/*.dtbo" ]; then
+            cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dts/mediatek/*.dtbo ./AnyKernel3/
           fi
-          if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dtbo.img" ]; then
-            cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dtbo.img ./AnyKernel3/
+          if [ -e "${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dts/mediatek/*.img" ]; then
+            cp -f ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dts/mediatek/*.img ./AnyKernel3/
           fi
           
 
@@ -387,6 +387,8 @@ jobs:
                   ${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-${{ env.KERNEL_NAME }}_${{ env.builddate }}.zip
                   ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image
                   ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz
+                  ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/Image.gz-dtb
+                  ${{ env.OUT_DIR }}/arch/${{ env.arch }}/boot/dts/mediatek/*.dtbo
           generate_release_notes: true
 
       - name: Test Upload to Telegram
