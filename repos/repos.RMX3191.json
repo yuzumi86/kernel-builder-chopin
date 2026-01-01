@@ -21,7 +21,8 @@
     "withKPM": false,
     "toolchains": [
       {
-        "url": "https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20250129-release/Clang-20.0.0git-20250129.tar.gz",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
         "name": "mylittle-clang",
         "binPath": ["bin"]
       }
