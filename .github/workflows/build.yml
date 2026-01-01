@@ -381,6 +381,8 @@ jobs:
         continue-on-error: true
         uses: softprops/action-gh-release@v1
         if: ${{ env.useAnykernel == 'true' && env.release == 'true' }}
+        env:
+          arch: ${{ steps.generate-args.outputs.ARCH }}
         with:
           tag_name: v${{ env.builddate }}.${{ github.run_number }}
           files: |
